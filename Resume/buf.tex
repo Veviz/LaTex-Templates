@@ -1,0 +1,42 @@
+% \title{My two column CV}
+% 
+% tccv (two columns curriculum vitae) is a LaTeX class inspired by
+% the template found at latextemplates.com by Alessandro Plasmati.
+% 
+% Create by Nicola Fontana, the original files can be downloaded from:
+% http://dev.entidi.com/p/tccv/
+% 
+\documentclass[CJKutf8]{tccv}
+\usepackage[english]{babel}
+
+
+\usepackage{CJKutf8}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{multirow}
+
+\begin{document}
+\begin{CJK*}{UTF8}{gkai}
+
+  \begin{figure}
+    \begin{tabular}{rl}\rule{0pt}{3ex}
+      \multirow{1}*{\includegraphics[scale=0.3]{photo.jpg}} & 	\\  \rule{0pt}{3ex}
+      & 出生年月：1891\ 年\ 5\ 月 \\  \rule{0pt}{3ex}
+      & 民\ \ \ \ \ \ 族：大\ \ \ \ \ \ \ \ \ \ \ \ 和 \\   \rule{0pt}{3ex}
+      & 政治面貌：少\ \ 先\ \ 队\ \ 员 \\ \rule{0pt}{3ex}
+      &家庭住址：东京都米花町
+    \end{tabular}
+  \end{figure} 
+
+  \newpage
+  \part{江户川柯南  \qquad
+  \par \ \ \ \ \ \  \ 江戸川 コナン   \qquad}
+
+
+\end{CJK*}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
