@@ -1,0 +1,130 @@
+\RequirePackage{fix-cm}
+\documentclass[twocolumn]{svjour3}          % twocolumn
+\smartqed  % flush right qed marks, e.g. at end of proof
+\usepackage{graphicx}
+\usepackage{mathptmx}      % use Times fonts if available on your TeX system
+
+\usepackage{amsmath}
+\usepackage{algpseudocode}
+\algrenewcommand\algorithmicrequire{\textbf{\ \ \ \ Input}}
+\algrenewcommand\algorithmicensure{\textbf{\ \ \ \ Output}}
+\usepackage[misc,geometry]{ifsym} 
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{graphics}
+\usepackage{pgfplots}
+\usepackage{multirow}
+\usepackage{tkz-kiviat}
+\usetikzlibrary{arrows}
+\usepackage[justification=centering]{caption}  %图 表格 标题居中
+\usepackage[colorlinks, citecolor=red]{hyperref} %建立到参考文献链接,并将具有超链接的标红，不需要的可以直接注释掉
+
+\journalname{Applied Intelligence}
+
+\begin{document}
+\title{Your paper name}
+
+\author{Author1 \and Author 2}
+
+\institute{Author1 \and Author1(\Letter) \at
+Department, Your school name and it's address, Beijing, China XXXXXX\\
+Author1 \\
+e-mail: xxxx@xx.xx.xx\\
+Author2\\
+e-mail: xxxx@xx.xx.xx\\
+}
+\date{Received: data / Accepted: data}
+
+\maketitle
+
+\begin{abstract}
+The abstract of your paper.
+  \keywords{key words 1 \and key words 2 \and etc.}
+\end{abstract}
+\section{Introduction}
+This is the $latex$ \cite{lamport1994latex} template for Applied Intellengence papers.
+
+\section{related work}
+This section described the related work that have been done by other people.\\
+
+\section{proposed model}
+There maybe some equations or formulas in your paper, such as the regression decision function of SVM is shown in Eq.(\ref{Eq1:decision_SVM})
+\begin{equation}
+    y=f(x)=\omega^T\Phi(x)+b
+    \label{Eq1:decision_SVM}
+\end{equation}
+
+And constrained quadratic programming problems shown in Eq.(\ref{Eq2:quadratic}).
+% &  means "line up here"
+% \\ means "line break"
+\begin{equation}
+  \begin{split} 
+   \min\quad &  F(\omega,\xi_i,\xi_i^*)=\frac{1}{2}\Vert\omega  \Vert+C \sum_{i=1}^N (\xi_i+\xi_i^*)\\
+   \mbox{s.t.}\quad
+   &y-\omega\Phi(x_i)-b\leq \varepsilon+\xi_i\\
+   &\omega\Phi(x_i)+b-y\leq \varepsilon+\xi_i^*\\
+   &\xi_i,\xi_i^*\geq 0
+  \end{split}
+\label{Eq2:quadratic}
+\end{equation}
+
+\section{XXXX Algorithm}
+Introduce your algorithm if you have one, ignore it otherwise.
+You may propose a algorithm and you need give a pseudocode shown in Algorithm \ref{Alg1}.
+\begin{algorithm}
+  \caption{The name of your proposed algorithm}
+  \label{Alg1}
+  \begin{algorithmic}[1]%每行显示行号
+    \Require the input of your algorithm
+    \Ensure the output of your algorithm
+    \Procedure{your algorithm's name}{parameters}
+       \State $a$;
+       \State $a \gets b+c$;
+       \For {$i = 1 \to N $ }
+          \State $i \gets i + 1$
+          \If{conditions}
+            \State break;
+          \EndIf
+       \EndFor
+    \EndProcedure
+  \end{algorithmic}
+\end{algorithm}
+
+
+\section{Experiments and Analysis}
+Your experiments and the analysis for your experiments.
+You may need some figures to describe your experiments. Of course you can draw your figures in this file. However, you can also draw your figures in other tex file and import the figures in this file, which added the simplicity of this tex file. The first figure is shown in Fig.\ref{Fig1}
+\begin{figure}
+  \begin{center}
+    \includegraphics[scale=0.5]{logo.eps}  %scale can adjust the size of your fig
+    \caption{the name of fig.1}
+    \label{Fig1}
+  \end{center}
+\end{figure}
+
+Of course, there may be some tables in your paper, such as Table \ref{Table1}
+%%
+\begin{table}
+  \caption{The table of student's scores}
+  \label{Table1}
+  \begin{center}
+    \begin{tabular}{ccccc}\hline
+      subjects	&	Chinese	&	Math	&	English	&	Computer	\\ \hline
+      Alice	&	86		&	100		&	91	&	93	\\
+      Bob	&	79		&	89		&	95	&	90	\\ \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+\section{Conclusion}
+This section did a conclusion for your paper.
+
+\section*{Acknowledgment}
+This work is supported by XXXX.
+
+\bibliographystyle{spmpsci}      % mathematics and physical sciences
+% \bibliographystyle{spphys}       % APS-like style for physics
+\bibliography{templateBib}
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

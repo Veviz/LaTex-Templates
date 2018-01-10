@@ -8,6 +8,6 @@ This repository stores the Latex templates I've used. We don't need to write a f
 
 # Templates
 
-1. Resume
-2. NUAA sliders
+1. [Resume](https://github.com/Veviz/LaTex-Templates/tree/master/Resume)
+2. Sliders
 3. APIN Paper
