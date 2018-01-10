@@ -9,5 +9,5 @@ This repository stores the Latex templates I've used. We don't need to write a f
 # Templates
 
 1. [Resume](https://github.com/Veviz/LaTex-Templates/tree/master/Resume)
-2. Sliders
-3. APIN Paper
+2. [Sliders](https://github.com/Veviz/LaTex-Templates/tree/master/Sliders)
+3. [APIN Paper](https://github.com/Veviz/LaTex-Templates/tree/master/APIN%20Paper)
